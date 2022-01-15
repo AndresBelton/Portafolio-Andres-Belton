@@ -1,0 +1,108 @@
+body{margin: 0;padding: 0;background-color: rgb(20, 20,20);color:rgb(00, 170, 50);}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+  
+
+#padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100vw;
+    height: 90vh;
+    
+}
+.divClass{
+ height: 100%;
+word-wrap: break-word;
+font-size: 3vh;
+}
+#divIZ{width: 18vw;}
+#divME{
+   width: 60vw;
+   font-size: 3.1vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: -1vh;
+   margin-left: -5ch;
+}
+#divDE{width: 18vw;}
+#divCara{      
+    margin-left: 8vw; 
+    width:14vw; 
+    height:17vw;
+    background-color: blanchedalmond;
+    margin-top: 2.9vh;
+    border-radius: .3em;   
+    border: thin solid  rgb(00, 170, 51);   /* borde solido y con color */
+    border-width:.3em;   /* ancho del borde */
+}
+
+#cara {
+    width: 100%;
+    height: 100%;
+ }
+
+.boton {
+   margin-top: 4px;
+    border-radius: .3em;        /* redondea borde */
+    transition-duration: 0.4s; /* efecto hover */
+    font-size: 4.5vh;           /* tamaño fuente */
+  
+    border: thin solid rgb(00, 70, 1);  /* borde solido y con color */
+    border-width:.1em;   /* ancho del borde */
+    width: 99vw;           /* ancho del boton */
+    height:8vh;           /* alto del boton */
+    background-color: rgb(00, 170, 51);  /* color de fondo */
+    color: rgb(255, 255, 255);              /* color de letra */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24), 0 4px 7px 0 rgba(0,0,0,0.19);/* efecto de sombra */
+}
+.boton:hover {      /* efecto hover */
+    background-color: rgb(00, 170, 51); /* color de fondo */
+    color: rgb(254, 255, 254);              /* color de letra */
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);/* efecto de sombra */
+}
+/*"""""""""""   MOVIL """"""""""*/
+@media screen and (orientation:portrait) { 
+    .boton {  
+      background-color: rgb(00, 170, 51);  
+      width: 99%;height:26%;
+      font-size: 3vh;  
+      }
+      
+      #divME   {width: 95vw;
+               font-size: 3.2 vh;
+               margin-top: 27vh;
+               
+     }
+      #padre   {flex-wrap: wrap;}  
+      #divIZ   {height: 22vh;}
+      #divDE   {display: none;}
+      #divCara {width:17vh;
+                height:20vh;
+                background-color: blanchedalmond;
+                margin-left: 14vh;
+                margin-top: 4vh;
+    }
+      
+  }
+  @media screen and (orientation:landscape) and (max-width: 900px) { 
+    .boton{ background-color: rgb(00, 170, 51);    font-size: 5.4vh; }    
+    #divME{ font-size: 5.9vh;
+            margin-top: -1vh;
+            margin-right: -20vh;
+            
+    }
+
+    #divCara { width:38vh;
+               height:43vh;
+               margin-left: -10vh;
+               margin-top: 19.5vh;
+  }
+}

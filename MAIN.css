@@ -1,0 +1,131 @@
+﻿
+    body {
+        margin: 0 auto;
+      
+      font-family: Georgia, "Times New Roman",
+            Times, serif;
+      color: gray(34, 0, 128);
+      background-color: whitesmoke;
+     
+    }
+      /*ejemplo de comentario*/
+  #gif3 {
+          position:absolute;left: 0;top: 0;
+          z-index:0;
+          object-fit: fill;
+          min-height: 100%;
+          width: 100vw; 
+          height:100vh;     
+      }
+
+  #abuelo {
+          display: flex;   
+          align-items:center;
+          justify-content: center;
+          flex-direction: column;
+          z-index: 1;
+          width: 100vw; 
+          height:100vh;
+      }  
+   #padre {
+          display: flex;   
+          z-index: 2;
+          flex-direction: row;
+          align-items:center;
+          justify-content:space-around;
+          flex-wrap: wrap;
+          border-radius: .6em;        /* redondea borde */
+          background-color:rgba(154, 185, 138, 0.8);
+          width: 29vw; 
+          height:85vh;
+      }
+      #cabeceraM  {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 5vh;
+        width:94%;           /* ancho del boton */
+        height:25%;           /* alto del boton */
+      }
+
+    #cabecera  {
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      width:90%;           /* ancho del boton */
+      height:55%;           /* alto del boton */
+    }
+ 
+    #placa{
+      position: absolute; 
+      width: 27vw;           /* ancho del boton */
+      height:20vh; 
+      z-index:-1;
+    }
+    #fondoMetal{
+      position: absolute;
+      width: 30vw; 
+      height:88vh;
+      background-size:cover ;z-index: -3;
+    }
+    #marquesina{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(2,0,36);
+      text-align:center;
+      font-family:'Open 24 Display St';
+      width: 22vw;
+      font-weight: bold;
+      font-size:7vh;   
+      color:rgb(00, 170, 51);
+      border: thin solid rgb(87, 87, 87);;   /* borde solido y con color */
+      border-width:.1em;   /* ancho del borde */
+      border-radius: .2em;     
+      height: 6vh;
+    }
+    .boton {
+          display: flex;
+          justify-content: center;  
+          align-items: center;
+          border-radius: .6em;        /* redondea borde */
+          transition-duration: 0.4s; /* efecto hover */
+          font-size: 3vh;           /* tamaño fuente */
+          background-color:rgba(210, 210, 210, 0.479);   /*color de fondo del boton */
+          border: thin solid rgb(0, 170, 51);   /* borde solido y con color */
+          border-width:.1em;   /* ancho del borde */
+          width: 72%;           /* ancho del boton */
+          height:8%;           /* alto del boton */
+          
+      }
+      .boton:hover {      /* efecto hover */
+          background-color: #05a80a; /* color de fondo */
+          color: white;              /* color de letra */
+          box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);/* efecto de sombra */
+          border: thin solid rgb(0, 0, 0);
+      }
+      #F{margin-bottom: 4vh;}
+      
+/*"""""""""""   Orientacion Portrait """"""""""*/
+@media screen and (orientation:portrait) { 
+  .boton {  
+      width: 75%;height:7%;
+      font-size: 4vw;
+    }
+   
+  #padre {     
+      width: 80vw; 
+      height:65vh;
+    }
+    #fondoMetal{
+      width: 81vw; 
+      height:68vh;
+    }
+  #placa{
+      width:72vw;           /* ancho del boton */
+      height:15vh; 
+    }
+  #cabecera  {width: 90vw;}
+  #marquesina{ font-size: 6vh; width:59vw; }
+
+  }

@@ -1,0 +1,94 @@
+body{margin: 0;padding: 0; overflow: hidden;background-color: rgb(20, 20,20);color:rgb(00, 170, 50);}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+  
+
+#padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100vw;
+    height: 90vh;
+    
+}
+.divClass{
+height: 100%;
+word-wrap: break-word;
+font-size: 3vh;
+}
+#divIZ{width: 18vw;}
+#divME{
+    display: flex;flex-direction: row;justify-content: space-around; 
+    flex-wrap: wrap;
+    width: 60vw;
+    margin-left: -8ch;
+}
+.cajas{
+    display: flex;align-items: center;
+    width: 15vw;height: auto;
+    
+}
+#divDE{width: 14vw;}
+
+
+#divhtml{  background-image:url("logos/html.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#divcss{ background-image:url("logos/css.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#divjs{  background-image:url("logos/js.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#divps{ background-image:url("logos/ps.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#divMySql{background-image:url("logos/MySql.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#divjava{background-image:url("logos/java.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#divvb{ background-image:url("logos/vb.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+#divcs{background-image:url("logos/cs.png");background-size:contain;background-repeat: no-repeat;background-position: center; }
+
+
+.boton {
+   margin-top: 4px;
+    border-radius: .3em;        /* redondea borde */
+    transition-duration: 0.4s; /* efecto hover */
+    font-size: 4.5vh;           /* tamaño fuente */
+  
+    border: thin solid rgb(00, 70, 1);  /* borde solido y con color */
+    border-width:.1em;   /* ancho del borde */
+    width: 99vw;           /* ancho del boton */
+    height:8vh;           /* alto del boton */
+    background-color: rgb(00, 170, 51);  /* color de fondo */
+    color: rgb(255, 255, 255);              /* color de letra */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24), 0 4px 7px 0 rgba(0,0,0,0.19);/* efecto de sombra */
+}
+.boton:hover {      /* efecto hover */
+    background-color: rgb(00, 170, 51); /* color de fondo */
+    color: rgb(254, 255, 254);              /* color de letra */
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);/* efecto de sombra */
+}
+/*"""""""""""   MOVIL """"""""""*/
+@media screen and (orientation:portrait) { 
+    .boton {  
+        background-color: rgb(00, 170, 51);  
+      width: 99%;height:26%;
+      font-size: 3vh;  
+      }
+      
+      #divME{width: 95vw; margin-bottom: 3vh;}
+      #padre{flex-wrap: wrap;}  
+      #divIZ{display: none;}
+      #divDE{display: none;}
+      .cajas{
+       
+        width:26vw;height: auto;
+        margin-left: 10.4vh;
+       
+    }
+      
+  }
+  @media screen and (orientation:landscape) and (max-width: 900px) { 
+    .boton {background-color: rgb(00, 170, 51);    font-size: 5.4vh; }    
+    #divME{font-size: 5vh;
+    margin-left: -4ch; }
+     
+  }
